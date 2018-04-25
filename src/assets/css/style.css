@@ -5,14 +5,14 @@
  *
  * Made By MaterializeCSS.com
  */
-body{
+/*body{
 	margin: 0;
 	padding: 0;
 	background: #fff;
 	background-size: cover;
 	background-position: center;
 	font-family: sans-serif;
-}
+}*/
 
 
 .icon-block {
@@ -24,13 +24,19 @@ body{
 
 
 
+
+/*LOGINBOX INICIAR SECION*/
+
+
+
+
 .loginbox{
 	width: 320px;
 	height: 380px;
 	background: rgba(0,0,0,0.08);
     color: #fff;
-	top: 50%;
-	left: 50%;
+	top: 55%;
+	left: 35%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
@@ -67,12 +73,12 @@ body{
     font-weight: bold;
 }
 .loginbox .inputBox label[type="user"]{
-    top:115px;
+    top:135px;
     left:30px;
 }
 
 .loginbox .inputBox label[type="passw"]{
-    top: 166px;
+    top: 205px;
     left: 30px;
 }
 
@@ -85,20 +91,23 @@ body{
 
 .loginbox .inputBox input:focus ~ label[type="user"],
 .loginbox .inputBox input:valid ~ label[type="user"] {
-    top: 95px;
+    top: 105px;
     left: 30px;
+    color: #00a3cc;
 }
 
 .loginbox .inputBox input:focus ~ label[type="passw"],
 .loginbox .inputBox input:valid ~ label[type="passw"] {
-    top: 146px;
+    top: 175px;
     left: 30px;
+    color: #00a3cc;
 }
 
 .loginbox input{
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
+    border-bottom: 1.5px solid #00a3cc;
     margin-bottom: 22px;
     outline: none;
     letter-spacing: 1px;
@@ -149,6 +158,141 @@ body{
     font-size: 12.3px;
 }
 
+
+
+
+/*REGISTERBOX REGISTRAR*/
+
+
+
+
+.registerbox{
+	width: 320px;
+	height: 380px;
+	background: rgba(0,0,0,0.08);
+    color: #fff;
+	top: 55%;
+	left: 65%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+    padding: 70px 30px;
+    /*transition: all 2s ease-in-out;*/
+    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+    border-radius: 10px;
+}	
+
+.registerbox .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.registerbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #00a3cc;
+}
+
+.registerbox .inputBox label{
+    position: absolute;
+    padding: 10px 0;
+    font-size: 16px;
+    color: darkgray;
+    pointer-events: none;
+    transition:.5s;
+    font-weight: bold;
+}
+.registerbox .inputBox label[type="user"]{
+    top:135px;
+    left:30px;
+}
+
+.registerbox .inputBox label[type="passw"]{
+    top: 205px;
+    left: 30px;
+}
+
+.registerbox .inputBox input:focus ~ label,
+.registerbox .inputBox input:valid ~ label {
+    color: #00ccff;
+    font-size: 16px;
+    /*font-weight: bold;*/
+}
+
+.registerbox .inputBox input:focus ~ label[type="user"],
+.registerbox .inputBox input:valid ~ label[type="user"] {
+    top: 105px;
+    left: 30px;
+    color: #00a3cc;
+}
+
+.registerbox .inputBox input:focus ~ label[type="passw"],
+.registerbox .inputBox input:valid ~ label[type="passw"] {
+    top: 175px;
+    left: 30px;
+    color: #00a3cc;
+}
+
+.registerbox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1.5px solid #00a3cc;
+    margin-bottom: 22px;
+    outline: none;
+    letter-spacing: 1px;
+    background: transparent;
+
+}
+
+.registerbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1.5px solid #00a3cc;
+    background: transparent;
+    outline: nonce;
+    height: 30px;
+    color: #000;
+    font-size: 16px;
+}
+
+.registerbox input[type="text"]:valid, input[type="password"]:valid{
+    /*height: 32px;*/
+}
+
+.registerbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #00b8e6;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.registerbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #00a3cc;
+    color: #fff;
+}
+
+.registerbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.registerbox a:hover{
+    color: #00a3cc;
+    text-decoration:underline;
+    font-size: 12.3px;
+}
 
 
 
