@@ -25,6 +25,7 @@ body{
 
 
 
+
 .loginbox{
 	width: 320px;
 	height: 380px;
@@ -55,7 +56,7 @@ body{
     padding: 0 0 20px;
     text-align: center;
     font-size: 25px;
-    color: #00a3cc;
+    color: #2196f3;
 }
 
 .loginbox .inputBox label{
@@ -73,27 +74,26 @@ body{
 }
 
 .loginbox .inputBox label[type="passw"]{
-    top: 205px;
+    top: 198px;
     left: 30px;
 }
 
 .loginbox .inputBox input:focus ~ label,
 .loginbox .inputBox input:valid ~ label {
-    color: #00ccff;
     font-size: 16px;
     /*font-weight: bold;*/
 }
 
 .loginbox .inputBox input:focus ~ label[type="user"],
 .loginbox .inputBox input:valid ~ label[type="user"] {
-    top: 105px;
+    top: 113px;
     left: 30px;
     color: #00a3cc;
 }
 
 .loginbox .inputBox input:focus ~ label[type="passw"],
 .loginbox .inputBox input:valid ~ label[type="passw"] {
-    top: 175px;
+    top: 177px;
     left: 30px;
     color: #00a3cc;
 }
@@ -102,7 +102,7 @@ body{
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    border-bottom: 1.5px solid #00a3cc;
+    border-bottom: 1.5px solid #29b6f6;
     margin-bottom: 22px;
     outline: none;
     letter-spacing: 1px;
@@ -110,25 +110,25 @@ body{
 
 }
 
-.loginbox input[type="text"], input[type="password"]{
+.loginbox input[type="text"], .loginbox input[type="password"]{
     border: none;
-    border-bottom: 1.5px solid #00a3cc;
+    border-bottom: 1.5px solid #29b6f6;
     background: transparent;
-    outline: nonce;
+    outline: none;
     height: 30px;
     color: #000;
     font-size: 16px;
 }
 
-.loginbox input[type="text"]:valid, input[type="password"]:valid{
-    /*height: 32px;*/
+.loginbox input[type="text"]:valid, .loginbox input[type="password"]:valid{
+    border-bottom: 1.5px solid #29b6f6;
 }
 
 .loginbox input[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
-    background: #00b8e6;
+    background: #29b6f6;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -136,7 +136,7 @@ body{
 
 .loginbox input[type="submit"]:hover{
     cursor: pointer;
-    background: #00a3cc;
+    background: #2196f3;
     color: #fff;
 }
 
@@ -148,7 +148,7 @@ body{
 }
 
 .loginbox a:hover{
-    color: #00a3cc;
+    color: #29b6f6;
     text-decoration:underline;
     font-size: 12.3px;
 }
@@ -191,7 +191,7 @@ body{
     padding: 0 0 20px;
     text-align: center;
     font-size: 25px;
-    color: #00a3cc;
+    color: #2196f3;
 }
 
 .registerbox .inputBox label{
@@ -209,27 +209,26 @@ body{
 }
 
 .registerbox .inputBox label[type="passw"]{
-    top: 205px;
+    top: 198px;
     left: 30px;
 }
 
 .registerbox .inputBox input:focus ~ label,
 .registerbox .inputBox input:valid ~ label {
-    color: #00ccff;
     font-size: 16px;
     /*font-weight: bold;*/
 }
 
 .registerbox .inputBox input:focus ~ label[type="user"],
 .registerbox .inputBox input:valid ~ label[type="user"] {
-    top: 105px;
+    top: 113px;
     left: 30px;
     color: #00a3cc;
 }
 
 .registerbox .inputBox input:focus ~ label[type="passw"],
 .registerbox .inputBox input:valid ~ label[type="passw"] {
-    top: 175px;
+    top: 177px;
     left: 30px;
     color: #00a3cc;
 }
@@ -238,7 +237,7 @@ body{
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    border-bottom: 1.5px solid #00a3cc;
+    border-bottom: 1.5px solid #29b6f6;
     margin-bottom: 22px;
     outline: none;
     letter-spacing: 1px;
@@ -246,25 +245,25 @@ body{
 
 }
 
-.registerbox input[type="text"], input[type="password"]{
+.registerbox input[type="text"], .registerbox input[type="password"]{
     border: none;
-    border-bottom: 1.5px solid #00a3cc;
+    border-bottom: 1.5px solid #29b6f6;
     background: transparent;
-    outline: nonce;
+    outline: none;
     height: 30px;
     color: #000;
     font-size: 16px;
 }
 
-.registerbox input[type="text"]:valid, input[type="password"]:valid{
-    /*height: 32px;*/
+.registerbox input[type="text"]:valid, .registerbox input[type="password"]:valid{
+    border-bottom: 1.5px solid #29b6f6;
 }
 
 .registerbox input[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
-    background: #00b8e6;
+    background: #29b6f6;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -272,7 +271,7 @@ body{
 
 .registerbox input[type="submit"]:hover{
     cursor: pointer;
-    background: #00a3cc;
+    background: #2196f3;
     color: #fff;
 }
 
@@ -284,7 +283,7 @@ body{
 }
 
 .registerbox a:hover{
-    color: #00a3cc;
+    color: #29b6f6;
     text-decoration:underline;
     font-size: 12.3px;
 }
