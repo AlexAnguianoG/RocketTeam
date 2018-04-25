@@ -19,15 +19,15 @@
     width: 600px;
     height: 400px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     position: relative;
     overflow: hidden;
 }
 
 .content-img img{
-    width: 100%;
+    width: 120%;
     -webkit-transition: all 300ms;
-    transition: all 300ms;
+    transition: all 100ms;
 }
 
 .content-1{
@@ -35,25 +35,31 @@
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(0,100,255,0.5);
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    margin-left: -750px;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
+    background: rgba(0,100,255,0.3);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -700px;
+    margin-top: -500px;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
 }
+
+
 
 .content-2{
     width: 1000px;
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(0,100,255,0.5);
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    margin-left: -800px;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+    background: rgba(0,100,255,0.4);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -750px;
+    margin-top: -500px;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black;
 }
 
 .content-3{
@@ -66,8 +72,8 @@
     transform: rotate(30deg);
     margin-left: -800px;
     margin-top: -500px;
-    -webkit-transition: all 900ms;
-    transition: all 900ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
     -webkit-box-shadow: 0px 1px 20px -5px black;
     box-shadow: 0px 1px 20px -5px black;
 }
@@ -77,37 +83,37 @@
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(0,100,255,0.5);
+    background: rgba(250,150,10,0.89);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
     margin-left: -850px;
     margin-top: -500px;
-    -webkit-transition: all 700ms;
-    transition: all 700ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
 }
 
 .content-img:hover .content-1{
-    width: 222%;
-    -webkit-transition: all 900ms;
-    transition: all 900ms;
-}
-
-.content-img:hover .content-2{
     width: 222%;
     -webkit-transition: all 300ms;
     transition: all 300ms;
 }
 
+.content-img:hover .content-2{
+    width: 222%;
+    -webkit-transition: all 350ms;
+    transition: all 350ms;
+}
+
 .content-img:hover .content-3{
     width: 222%;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
 }
 
 .content-img:hover .content-4{
     width: 222%;
-    -webkit-transition: all 700ms;
-    transition: all 700ms;
+    -webkit-transition: all 450ms;
+    transition: all 450ms;
 }
 
 .content-img:hover img{
@@ -120,7 +126,7 @@
 
 .content-txt{
     position: absolute;
-    top: 0;
+    top: 20%;
     width: 400px;
     padding: 10px;
     z-index: 10;
@@ -130,7 +136,7 @@
 }
 
 .content-txt h2{
-    font-size: 30px;
+    font-size: 50px;
     opacity: 0;
     -webkit-transform: scale(0.2);
     transform: scale(0.2);

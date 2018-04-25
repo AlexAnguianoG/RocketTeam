@@ -5,15 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
-/*body{
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	background-size: cover;
-	background-position: center;
-	font-family: sans-serif;
-}*/
-
+body{
+	/*background: rgba(0,111,255,0.7);*/
+    
+}
 
 .icon-block {
   padding: 0 15px;
