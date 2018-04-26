@@ -1,47 +1,90 @@
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-	<ul class="left hide-on-med-and-down">
-	    <img class="waves-effect responsive-img" width="50" height="50" src="assets/images/RocketL.png"><a id="logo-container" style="font-family:Comic Sans MS;" class="right valign-wrapper flow-text">ROCKET LEARNING</a>
-	</ul>
+<style>
+
+    .mobil .titulom{
+        font-size: 17px;
+        left: 10%;
+        
+    }
+    .mobil .sidenav {
+        
+    }
+    .mobil .sidenav img{
+        top: 10px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+    }
+    .mobil .sidenav .btn{
+        top: 15px;
+        border-radius: 15px;
+    }
+    
+    .mobil .menum{
+        color: #fff;
+        border-bottom: 2px solid #2196f3;
+    }
+    .login{
+        border-radius: 10px;
+    }
+
+</style>
+
+<nav class="light-blue lighten-1 " role="navigation">
+    <div class="nav-wrapper container hide-on-med-and-down">
+        
+        <ul class="left hide-on-med-and-down">
+            <img routerLink="/" width="50" height="50" src="assets/images/RocketL.png" class="waves-effect responsive-img" ><h5 style="font-family:Comic Sans MS;" class="titulod right sidenav-trigger valign-wrapper">ROCKET LEARNING</h5>
+        </ul>
+
+
+        <ul class="right hide-on-med-and-down">
+            <img routerLink="/user" width="65" height="65"  src="assets/images/User.png" class="btn-large responsive-img btn-floating">
+        </ul>
 	
-	<ul class="right hide-on-med-and-down">
-	    <img width="65" height="65" href="0Usuario.html" src="assets/images/User.png" alt="" class="btn-large responsive-img btn-floating">
-	</ul>
-	
-	<ul class="right hide-on-med-and-down">
-	    <a routerLink="/signup" class="btn-large waves-effect waves-light orange z-depth-2">Ingresar</a>
-	</ul>
-	<ul class="right hide-on-med-and-down">
+        
+        <ul class="right hide-on-med-and-down">
+            <a routerLink="/signup" class="login btn btn-default waves-effect waves-light orange z-depth-1">LOGIN / SIGNUP</a>
+        </ul>
+        <ul class="right hide-on-med-and-down">
             <li><a routerLink="/views">Recientes</a></li>
-	</ul>
-	<ul class="right hide-on-med-and-down">
+        </ul>
+        <ul class="right hide-on-med-and-down">
             <li><a routerLink="/views">Mas vistos</a></li>
-	</ul>
-	<ul class="right hide-on-med-and-down">
+        </ul>
+        <ul class="right hide-on-med-and-down">
             <li><a routerLink="/subjects">Materias</a></li>
-	</ul>
-	<ul class="right hide-on-med-and-down">
+        </ul>
+        <ul class="right hide-on-med-and-down">
             <li><a routerLink="/">Inicio</a></li>    <!--   <li class="active">   -->
-	</ul>
+        </ul>
 	
-	
-	
-	<ul id="nav-mobile" class="sidenav">
-            <li><a routerLink="/views">Recientes</a></li>
-	</ul>
-	<ul id="nav-mobile" class="sidenav">
-            <li><a routerLink="/views">Mas vistos</a></li>
-	</ul>
-	<ul id="nav-mobile" class="sidenav">
-            <li><a routerLink="/subjects">Materias</a></li>
-	</ul>
-	<ul id="nav-mobile" class="sidenav">
-            <li class="active"><a routerLink="/home">Inicio</a></li>
-	</ul>
-	
-	<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+    
+
+    
+    <div class="mobil nav-wrapper hide-on-large-only light-blue lighten-1">
+    
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="iconnavegacion material-icons">menu</i></a>
+
+        <div class="nav-wrapper center">
+            <img routerLink="/" width="40" height="40" src="assets/images/RocketL.png" class="waves-effect responsive-img"><a style="font-family:Comic Sans MS;" class="titulom sidenav-trigger valign-wrapper">ROCKET LEARNING</a>
+        </div>
+        
+        <ul id="nav-mobile" class="sidenav light-blue lighten-1">
+            <li><img routerLink="/user" src="assets/images/User.png" class="responsive-img btn-floating z-depth-2"></li>
+            <li><a routerLink="/signup" class="btn btn-small waves-effect waves-light orange z-depth-1">LOGIN / SIGNUP</a></li><br>
+            <li><a  class="menum" routerLink="/home">Inicio</a></li>
+            <li><a  class="menum" routerLink="/subjects">Materias</a></li>
+            <li><a  class="menum" routerLink="/views">Mas vistos</a></li>
+            <li><a  class="menum" routerLink="/views">Recientes</a></li>
+        </ul>    
+    
+    </div>
+    
+    
 </nav>
+
+
 <div>
     <nav>
 	<div class="nav-wrapper">
@@ -57,39 +100,46 @@
 </div>
 <br><br>
 
+
+
+
 <router-outlet></router-outlet>
 
 
 
 
 
-<footer class="page-footer orange">
+<footer class="page-footer blue">
     <div class="container">
-	<div class="row">
+        <div class="row">
+        
             <div class="col l6 s12">
-		<h5 class="white-text">Integrantes:</h5>
-		<p class="grey-text text-lighten-4">Alejandro Anguiano Gutiérrez 		A01566462<br>
-                                            Carlos David Estrada Rodriguez 	A01566138</p>
+                <h5 class="white-text">Integrantes:</h5>
+                <p class="grey-text text-lighten-4">Alejandro Anguiano Guti&eacute;rrez - A01566462<br>Carlos David Estrada Rodriguez - A01566138</p>
+            </div>
 
-            </div>
             <div class="col l3 s12">
-		<h5 class="white-text">.</h5>
-		<ul>
-		    <li><a class="white-text" href="#!">.</a></li>
-		</ul>
+                <h5 class="white-text">.</h5>
+                <ul>
+                <li><a class="white-text" href="#!">.</a></li>
+                </ul>
             </div>
+
             <div class="col l3 s12">
-		<h5 class="white-text">.</h5>
-		<ul>
-		    <li><a class="white-text" href="#!">.</a></li>
-		</ul>
+                <h5 class="white-text">.</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">.</a></li>
+                </ul>
             </div>
-	</div>
+        
+        </div>
     </div>
+    
     <div class="footer-copyright">
-	<div class="container">
-	    <a class="orange-text text-lighten-3">Rocket Learning ©</a>
-	</div>
+        <div class="container">
+	    <a class="blue-text text-lighten-3">Rocket Learning &copy;</a>
+        </div>
     </div>
+    
 </footer>
 

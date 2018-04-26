@@ -20,7 +20,7 @@ body{
 
 
 
-/*LOGINBOX INICIAR SECION*/
+/*LOGINBOX INICIAR SESION*/
 
 
 
@@ -28,13 +28,11 @@ body{
 
 .loginbox{
 	width: 320px;
-	height: 380px;
+	height: 390px;
 	background: rgba(0,0,0,0.08);
     color: #fff;
-	top: 55%;
-	left: 35%;
-	position: absolute;
-	transform: translate(-50%,-50%);
+
+	transform: translate(0,+10%);
 	box-sizing: border-box;
     padding: 70px 30px;
     /*transition: all 2s ease-in-out;*/
@@ -105,7 +103,6 @@ body{
     border-bottom: 1.5px solid #29b6f6;
     margin-bottom: 22px;
     outline: none;
-    letter-spacing: 1px;
     background: transparent;
 
 }
@@ -163,13 +160,12 @@ body{
 
 .registerbox{
 	width: 320px;
-	height: 380px;
+	height: 430px;
 	background: rgba(0,0,0,0.08);
     color: #fff;
-	top: 55%;
-	left: 65%;
-	position: absolute;
-	transform: translate(-50%,-50%);
+
+	
+	transform: translate(0,+10%);
 	box-sizing: border-box;
     padding: 70px 30px;
     /*transition: all 2s ease-in-out;*/
