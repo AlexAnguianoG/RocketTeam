@@ -159,7 +159,7 @@ body{
 
 
 .registerbox{
-	width: 320px;
+	width: 440px;
 	height: 430px;
 	background: rgba(0,0,0,0.08);
     color: #fff;
@@ -204,9 +204,18 @@ body{
     left:30px;
 }
 
-.registerbox .inputBox label[type="passw"]{
-    top: 198px;
+.registerbox .inputBox label[type="correo"]{
+    top:135px;
+    left:164px;
+}
+
+.registerbox .inputBox label[type="pass"]{
+    top: 195px;
     left: 30px;
+}
+.registerbox .inputBox label[type="passconfirmar"]{
+    top: 195px;
+    left: 230px;
 }
 
 .registerbox .inputBox input:focus ~ label,
@@ -222,10 +231,24 @@ body{
     color: #00a3cc;
 }
 
-.registerbox .inputBox input:focus ~ label[type="passw"],
-.registerbox .inputBox input:valid ~ label[type="passw"] {
-    top: 177px;
+.registerbox .inputBox input:focus ~ label[type="correo"],
+.registerbox .inputBox input:valid ~ label[type="correo"] {
+    top: 113px;
+    left: 164px;
+    color: #00a3cc;
+}
+
+.registerbox .inputBox input:focus ~ label[type="pass"],
+.registerbox .inputBox input:valid ~ label[type="pass"] {
+    top: 174px;
     left: 30px;
+    color: #00a3cc;
+}
+
+.registerbox .inputBox input:focus ~ label[type="passconfirmar"],
+.registerbox .inputBox input:valid ~ label[type="passconfirmar"] {
+    top: 174px;
+    left: 230px;
     color: #00a3cc;
 }
 

@@ -10,49 +10,72 @@
     }
     .mobil .sidenav img{
         top: 10px;
-        left: 100px;
         width: 100px;
         height: 100px;
     }
+    
+    .mobil .sidenav .divisor{
+        height: 25px;    
+    }
+    
     .mobil .sidenav .btn{
-        top: 15px;
+        background: white;
+        height: 45px;
+        color: #2196f3; 
+        border: 1.5px solid #2196f3;
         border-radius: 15px;
+        padding: 2px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        
+
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .mobil .sidenav .btn:active{
+        background: #2196f3;
+        color: white;
     }
     
     .mobil .menum{
         color: #fff;
         border-bottom: 2px solid #2196f3;
     }
-    .login{
+    
+    .mobil .menum:active{
+        opacity: 0.4;
+    }
+    
+    .desktop .login{
         border-radius: 10px;
     }
+    
+
 
 </style>
 
-<nav class="light-blue lighten-1 " role="navigation">
+<nav class="desktop light-blue lighten-1 " role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
         
         <ul class="left hide-on-med-and-down">
             <img routerLink="/" width="50" height="50" src="assets/images/RocketL.png" class="waves-effect responsive-img" ><h5 style="font-family:Comic Sans MS;" class="titulod right sidenav-trigger valign-wrapper">ROCKET LEARNING</h5>
         </ul>
 
-
-        <ul class="right hide-on-med-and-down">
-            <img routerLink="/user" width="65" height="65"  src="assets/images/User.png" class="btn-large responsive-img btn-floating">
-        </ul>
-	
         
         <ul class="right hide-on-med-and-down">
-            <a routerLink="/signup" class="login btn btn-default waves-effect waves-light orange z-depth-1">LOGIN / SIGNUP</a>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a routerLink="/views">Recomendados</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a routerLink="/subjects">Materias</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a routerLink="/">Inicio</a></li>    <!--   <li class="active">   -->
+            <li class="inicionav"><a  routerLink="/">Inicio</a></li>    <!--   <li class="active">   -->
+            
+            <li class="materiasnav"><a routerLink="/subjects">Materias</a></li>
+
+            <li class="recomendadosnav" ><a routerLink="/views">Recomendados</a></li>
+
+            <li><a routerLink="/signup" class="login btn btn-default waves-effect waves-light orange z-depth-1">LOGIN / SIGNUP</a></li>
+            
+            <li><img routerLink="/user" width="65" height="65"  src="assets/images/User.png" class="btn-large responsive-img btn-floating"></li>
         </ul>
 	
     </div>
@@ -63,14 +86,20 @@
     
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="iconnavegacion material-icons">menu</i></a>
 
-        <div class="nav-wrapper center">
+        <div class="nav-wrapper center" >
             <img routerLink="/" width="40" height="40" src="assets/images/RocketL.png" class="waves-effect responsive-img"><a style="font-family:Comic Sans MS;" class="titulom sidenav-trigger valign-wrapper">ROCKET LEARNING</a>
         </div>
         
-        <ul id="nav-mobile" class="sidenav light-blue lighten-1">
-            <li><img routerLink="/user" src="assets/images/User.png" class="responsive-img btn-floating z-depth-2"></li>
-            <li><a routerLink="/signup" class="btn btn-small waves-effect waves-light orange z-depth-1">LOGIN / SIGNUP</a></li><br>
-            <li><a  class="menum" routerLink="/home">Inicio</a></li>
+        <ul id="nav-mobile" allign="center" class="sidenav light-blue lighten-1">
+            <li class="center"><img routerLink="/user" src="assets/images/User.png" class="responsive-img btn-floating z-depth-2"></li>
+            
+            <li class="divisor"></li>
+            
+            <li class="center"><a routerLink="/signup" class="btn z-depth-1">Login/Signup</a></li>
+            
+            <li class="divisor"></li>
+            
+            <li><a  class="menum" routerLink="/">Inicio</a></li>
             <li><a  class="menum" routerLink="/subjects">Materias</a></li>
             <li><a  class="menum" routerLink="/views">Recomendados</a></li>
         </ul>    
