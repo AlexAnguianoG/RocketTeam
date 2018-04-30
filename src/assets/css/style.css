@@ -204,7 +204,7 @@ body{
     left:30px;
 }
 
-.registerbox .inputBox label[type="correo"]{
+.registerbox .inputBox label[type="email"]{
     top:135px;
     left:164px;
 }
@@ -231,11 +231,15 @@ body{
     color: #00a3cc;
 }
 
-.registerbox .inputBox input:focus ~ label[type="correo"],
-.registerbox .inputBox input:valid ~ label[type="correo"] {
+.registerbox .inputBox input:focus ~ label[type="email"],
+.registerbox .inputBox input:valid ~ label[type="email"] {
     top: 113px;
     left: 164px;
     color: #00a3cc;
+}
+
+.registerbox .inputBox input:invalid:focus ~ label[type="email"] {
+    color: red;
 }
 
 .registerbox .inputBox input:focus ~ label[type="pass"],
@@ -264,7 +268,9 @@ body{
 
 }
 
-.registerbox input[type="text"], .registerbox input[type="password"]{
+.registerbox input[type="text"],
+.registerbox input[type="email"],
+.registerbox input[type="password"]{
     border: none;
     border-bottom: 1.5px solid #29b6f6;
     background: transparent;
@@ -274,7 +280,9 @@ body{
     font-size: 16px;
 }
 
-.registerbox input[type="text"]:valid, .registerbox input[type="password"]:valid{
+.registerbox input[type="text"]:valid,
+.registerbox input[type="email"]:valid,
+.registerbox input[type="password"]:valid{
     border-bottom: 1.5px solid #29b6f6;
 }
 
