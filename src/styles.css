@@ -16,8 +16,8 @@
 }
 
 .content-img{
-    width: 350px;
-    height: 180px;
+    width: 300px;
+    height:200px;
     margin: auto;
     margin-top: 50px;
     position: relative;
@@ -121,16 +121,14 @@
 .content-txt{
     position: absolute;
     top: 0;
-    width: 200px;
-    padding: 5px;
     z-index: 10;
     color: white;
-    text-align: center;
-    margin-top: 10px;
+    text-align: left;
 }
 
 .content-txt h2{
     font-size: 30px;
+    width: 200px;
     opacity: 0;
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
@@ -138,9 +136,9 @@
     transition: all 300ms;
 }
 
-.content-txt p{
+.content-txt ul{
     font-size: 15px;
-    margin-top: 10px;
+    width: 300px;
     opacity: 0;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
@@ -156,7 +154,7 @@
     transform: scale(1);
 }
 
-.content-img:hover p{
+.content-img:hover ul{
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
