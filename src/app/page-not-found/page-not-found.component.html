@@ -4,16 +4,25 @@
     }
     
     .divisor{
-        border-bottom: 2px solid rgba(250,150,10,0.89);
-        padding-top: 30px;
-        padding-left: 30px;
+        border-bottom: 2px solid rgba(0,100,255,0.3);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .bookmark{
+        font-size: 28px;
+    }
+    .bookmark:hover{
+        color: orange;
+        font-size: 29px;
+        cursor: pointer;
     }
     
     .descripcion{
         border-top: 2px solid rgba(0,100,255,0.5);
         border-bottom: 2px solid rgba(0,100,255,0.5);
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     
     .contacto{
@@ -26,19 +35,22 @@
         
     }
     
-    i{
+    .star{
         font-size: 35px;
         position:static;
     }
     
+    .star:hover{
+        cursor:pointer;
+    }
+    
     .titulo{
         border-bottom: 2px solid rgba(0,100,255,0.5);
-                position: sticky;
-
     }
     
     .ejercicios{
         border: 0.5px solid rgba(0,100,255,0.5);
+        border-radius: 8px;
         background: rgba(0,100,255,0.4);
         margin-bottom: 20px;
     }
@@ -52,6 +64,21 @@
         padding-bottom: 20px;
         text-align: justify;
         font-family:Comic Sans MS; 
+    }
+    
+    .nuevos{
+        color: white;
+        border-radius: 3px;
+    }
+    
+    .imagenuser{
+        text-align: center;
+    }
+    
+    .comentarios{
+        padding-left: 0px;
+        font-size: 20px;
+        
     }
     
     .commentbox{
@@ -72,14 +99,12 @@
         color: #2196f3; 
         border: 1.5px solid #2196f3;
         border-radius: 15px;
-        padding: 2px 13px;
+        padding: 5px 13px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 15px;
         cursor: pointer;
-        
-
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
     }
@@ -87,6 +112,10 @@
     .submit:hover{
         background: #2196f3;
         color: white;
+    }
+    
+    .send{
+        font-size: 22px;
     }
 
 </style>
@@ -99,13 +128,18 @@
         
         
         <div class="descripcion">
-            <h4 class="left">Proyecciones Estereogr&aacute;ficas</h4><h4 class="yellow-text right"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></h4>
-            <br><br><br><br><br>
+            <div class="row">
+                <h4 class="left">Proyecciones Estereogr&aacute;ficas <i class="bookmark material-icons">turned_in_not</i></h4><h4 class="yellow-text right"><i class="star material-icons">star</i><i class="star material-icons">star</i><i class="star material-icons">star</i><i class="star material-icons">star</i><i class="star material-icons">star</i></h4>
+            </div>
+            
+            
+            <br>
             <p>La tierra se divide en Paralelos y meridianos. Los más conocidos son el Paralelo del Ecuador y el otro es el meridiano de Greenwich. De estas dos líneas de referencia parte las coordenadas para localizar un punto sobre la superficie delas esfera.
             Pero ¿Comó dibujar a la tierra?, un método es proyectarla sobre un plano. Supongamos primero una mesa sobre ella en el centro colocamos una cuerpo esférico que representa a la tierra,  Escojamos un punto fijo de referencia por ejemplo el polo Norte (el cual será el foco de la proyección), ahora escojamos un punto sobre la superficie de la tierra para ser proyectado sobre la mesa ahora podemos trazar la recta que una los dos puntos (el polo Norte y el punto sobre la tierra) dicha recta tocará a la mesa en un punto dado a esto le llamamos su proyección. De esta manera la tierra puede ser proyectada sobre el plano de la mesa, mientras más cercano este el punto del polo norte más lejana será su proyección, incluso puede salirse su proyección de la mesa. Este mapa del mundo se llama la proyección estereográfica.</p>
             <br><br>
             <p class="contacto">Contacto: josebernal@gmail.com</p>
-            <br>
+            <br><br>
+            
         </div>
     </div>
 
@@ -136,39 +170,51 @@
     
     
     <div class="col s12 l8">
-        <h5>4 Comentarios</h5>
-        <br>
-
-        
+        <h5>Comentarios<span class="nuevos badge blue">3 nuevos</span></h5> 
         
         <div class="divisor"></div>
         
-        <div class="ejercicios col s12 l4">
-        
-        
+        <div class="row valign-wrapper">
+            <div class="col s2 imagenuser">
+              <img width="70px" height="70px" src="/assets/images/User.png" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s10 comentarios">
+                <a>Arturo Rodriguez</a><p>Muchas gracias, me fue de gran ayuda</p>
+            </div>
         </div>
         
         <div class="divisor"></div>
         
-        <div class="ejercicios col s12 l4">
-        
-        
+        <div class="row valign-wrapper">
+            <div class="col s2 imagenuser">
+              <img width="70px" height="70px" src="/assets/images/User.png" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s10 comentarios">
+                <a>Calvin Harris</a><p>Muy buen video.</p>
+            </div>
         </div>
         
         <div class="divisor"></div>
         
-        <div class="ejercicios col s12 l4">
-        
-        
+        <div class="row valign-wrapper">
+            <div class="col s2 imagenuser">
+              <img width="70px" height="70px" src="/assets/images/User.png" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s10 comentarios">
+                <a>Paulina Mendoza</a><p>:o genial ahora si puedo terminar mi tarea</p>
+            </div>
         </div>
         
         <div class="divisor"></div>
+        
+        
+          
         
         
         <div class="commentbox">
             <textarea placeholder="Agrega un comentario aqu&iacute;." required></textarea>
-            <input class="submit right" type="submit" value="Agregar comentario">
-        
+            
+            <button class="submit right" type="submit">Agregar comentario<i class="send material-icons right">navigate_next</i></button>
         </div>
         
         
