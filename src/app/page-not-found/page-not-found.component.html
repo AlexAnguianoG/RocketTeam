@@ -1,22 +1,51 @@
 <style>
+    .video-container{
+        border: 5px solid rgba(0,100,255,0.6);
+    }
+    
+    .divisor{
+        border-bottom: 2px solid rgba(250,150,10,0.89);
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    
+    .descripcion{
+        border-top: 2px solid rgba(0,100,255,0.5);
+        border-bottom: 2px solid rgba(0,100,255,0.5);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .contacto{
+        text-decoration: underline;
+    }
+    
     h3{
         font-weight: bold;
         font-size: 30px;
         
     }
     
+    i{
+        font-size: 35px;
+        position:static;
+    }
+    
     .titulo{
-        border-bottom: 1px solid rgba(0,100,255,0.5);
+        border-bottom: 2px solid rgba(0,100,255,0.5);
+                position: sticky;
+
     }
     
     .ejercicios{
-        border: 1px solid rgba(0,100,255,0.5);
-        background: rgba(0,100,255,0.2);
+        border: 0.5px solid rgba(0,100,255,0.5);
+        background: rgba(0,100,255,0.4);
         margin-bottom: 20px;
     }
     
     .ejercicios ol{
-        padding-left: 10px;
+        padding-left: 18px;
+        padding-right: 10px;
     }
     
     p{
@@ -24,7 +53,41 @@
         text-align: justify;
         font-family:Comic Sans MS; 
     }
+    
+    .commentbox{
+        margin-top: 30px;
+    }
+    
+    textarea{
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px 5px;
+        border: 2px solid rgba(0,100,255,0.5);
+        resize: vertical;
+    }
+    
+    .submit{
+        background: white;
+        height: 33px;
+        color: #2196f3; 
+        border: 1.5px solid #2196f3;
+        border-radius: 15px;
+        padding: 2px 13px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        
 
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+    
+    .submit:hover{
+        background: #2196f3;
+        color: white;
+    }
 
 </style>
 
@@ -33,14 +96,17 @@
         <div class="video-container z-depth-4">
 		  <iframe src="https://www.youtube.com/embed/RRrIOuh7n5I" frameborder="0" allowfullscreen></iframe>
         </div>
-        <h4 class="left">Proyecciones Estereogr&aacute;ficas</h4><h4 class="yellow-text right"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></h4>
-        <br><br><br><br><br>
-        <p>La tierra se divide en Paralelos y meridianos. Los más conocidos son el Paralelo del Ecuador y el otro es el meridiano de Greenwich. De estas dos líneas de referencia parte las coordenadas para localizar un punto sobre la superficie delas esfera.
-        Pero ¿Comó dibujar a la tierra?, un método es proyectarla sobre un plano. Supongamos primero una mesa sobre ella en el centro colocamos una cuerpo esférico que representa a la tierra,  Escojamos un punto fijo de referencia por ejemplo el polo Norte (el cual será el foco de la proyección), ahora escojamos un punto sobre la superficie de la tierra para ser proyectado sobre la mesa ahora podemos trazar la recta que una los dos puntos (el polo Norte y el punto sobre la tierra) dicha recta tocará a la mesa en un punto dado a esto le llamamos su proyección. De esta manera la tierra puede ser proyectada sobre el plano de la mesa, mientras más cercano este el punto del polo norte más lejana será su proyección, incluso puede salirse su proyección de la mesa. Este mapa del mundo se llama la proyección estereográfica.</p>
-        <br><br>
-        <p>Contacto: josebernal@gmail.com</p>
-        <br>
-
+        
+        
+        <div class="descripcion">
+            <h4 class="left">Proyecciones Estereogr&aacute;ficas</h4><h4 class="yellow-text right"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></h4>
+            <br><br><br><br><br>
+            <p>La tierra se divide en Paralelos y meridianos. Los más conocidos son el Paralelo del Ecuador y el otro es el meridiano de Greenwich. De estas dos líneas de referencia parte las coordenadas para localizar un punto sobre la superficie delas esfera.
+            Pero ¿Comó dibujar a la tierra?, un método es proyectarla sobre un plano. Supongamos primero una mesa sobre ella en el centro colocamos una cuerpo esférico que representa a la tierra,  Escojamos un punto fijo de referencia por ejemplo el polo Norte (el cual será el foco de la proyección), ahora escojamos un punto sobre la superficie de la tierra para ser proyectado sobre la mesa ahora podemos trazar la recta que una los dos puntos (el polo Norte y el punto sobre la tierra) dicha recta tocará a la mesa en un punto dado a esto le llamamos su proyección. De esta manera la tierra puede ser proyectada sobre el plano de la mesa, mientras más cercano este el punto del polo norte más lejana será su proyección, incluso puede salirse su proyección de la mesa. Este mapa del mundo se llama la proyección estereográfica.</p>
+            <br><br>
+            <p class="contacto">Contacto: josebernal@gmail.com</p>
+            <br>
+        </div>
     </div>
 
     <div class="ejercicios col s12 l4">
@@ -54,25 +120,54 @@
         </ol>
         <br>
     </div>
+    
+    
     <div class="ejercicios col s12 l4">
         <div class="titulo">
             <h3>Respuestas</h3>  
         </div>
         <br>
         <ol type="1">
-            <li><p>Respuesta</p></li>
-            <li><p>Respuesta</p></li>
+            <li><p>Respuesta del ejercicio</p></li>
+            <li><p>Respuesta del ejercicio</p></li>
         </ol>
         <br>
     </div>
     
     
     <div class="col s12 l8">
-        <h5>Comentarios:</h5>
+        <h5>4 Comentarios</h5>
         <br>
-        <div>
-            <textarea style="height: 100px; ">Agrega un comentario aqu&iacute;.</textarea>
-            <input class="right" type="submit" value="Submit">
+
+        
+        
+        <div class="divisor"></div>
+        
+        <div class="ejercicios col s12 l4">
+        
+        
+        </div>
+        
+        <div class="divisor"></div>
+        
+        <div class="ejercicios col s12 l4">
+        
+        
+        </div>
+        
+        <div class="divisor"></div>
+        
+        <div class="ejercicios col s12 l4">
+        
+        
+        </div>
+        
+        <div class="divisor"></div>
+        
+        
+        <div class="commentbox">
+            <textarea placeholder="Agrega un comentario aqu&iacute;." required></textarea>
+            <input class="submit right" type="submit" value="Agregar comentario">
         
         </div>
         
