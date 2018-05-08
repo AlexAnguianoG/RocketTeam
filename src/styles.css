@@ -44,16 +44,16 @@
 }
 
 .content-2{
-    width: 1000px;
+    width: 0;
     height: 1000px;
     position: absolute;
     top: 0;
     background: rgba(0,100,255,0.5);
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    margin-left: -800px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    left: 80px;
     -webkit-transition: all 500ms;
-    transition: all 500ms;
+    transition: all 5ms;
 }
 
 .content-3{
@@ -64,7 +64,7 @@
     background: rgba(0,100,255,0.5);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
-    margin-left: -800px;
+    margin-left: -790px;
     margin-top: -500px;
     -webkit-transition: all 900ms;
     transition: all 900ms;
@@ -80,7 +80,7 @@
     background: rgba(0,100,255,0.5);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
-    margin-left: -850px;
+    margin-left: -840px;
     margin-top: -500px;
     -webkit-transition: all 700ms;
     transition: all 700ms;
@@ -137,14 +137,36 @@
 }
 
 .content-txt ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height: 400px;
+    overflow: hidden;
+    background-color: none;
+    position: absolute;
+    top: 0px;
+    left: 285px;
     font-size: 15px;
-    width: 300px;
     opacity: 0;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     -webkit-transition: all 300ms;
     transition: all 300ms;
 }
+
+.content-txt a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.content-txt ul li a:hover {
+    background-color: rgba(0,100,255,0.8);
+}
+
 
 .content-img:hover h2{
     opacity: 1;
@@ -156,6 +178,7 @@
 
 .content-img:hover ul{
     opacity: 1;
+    
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: all 500ms;
